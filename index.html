@@ -1,0 +1,27 @@
+<!doctype html>
+<meta charset="utf-8"/>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+<script src="list.js"></script> <!--source: http://listjs.com/-->
+<script type='text/javascript' src="main.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="core.css">
+</head>
+<body>
+ <div class="nav-left">
+  <!--div><input type="text" class="search-box" /></div-->
+   <!--button class="btn" id="load"><i class="glyphicon glyphicon-search"></i></button-->
+   <div id="data-list">
+    <input class="search" placeholder="search"/>
+    <button class="sort" data-sort="title">Sort by title</button>
+    <button class="sort" data-sort="category">Sort by category</button>
+    <button class="sort" data-sort="a_price">Sort by price</button>
+    <ul id="d-list" class="list list-wrap"></ul>
+    <!--contents loads here-->
+   </div>
+   <input class="btn btn-success" value="load more"/> 
+</div>
+</body>
+</html>
